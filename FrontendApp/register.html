@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: center;">
+        <ul type="none" style="display: flex;">
+            <a href=".\index.html"><li style="padding: 10px;">Home</li></a>
+            <a href=".\cv.html"><li style="padding: 10px;">My Portfolio</li></a>
+        </ul>
+    </div>
+    <h2 style="text-align: center;">Register Form</h2>
+    <div style="display: flex; justify-content: center;">
+        <form action="https://httpbin.org/post" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <label for="gender">Gender:</label><br>
+            <label for="gender">Male:</label>
+            <input type="radio" id="male" name="gender" value="male" required><br>
+            <label for="gender">Female</label>
+            <input type="radio" id="female" name="gender" value="female"><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18"><br><br>
+            <label for="department">Department:</label>
+            <select name="department" id="department" required>
+                <option value="IT">IT</option>
+                <option value="HR">HR</option>
+                <option value="Finance">Finance</option>
+            </select><br><br>
+            <label for="skills">Skills:</label><br>
+            <input type="checkbox" id="skills" name="skills" value="C#" >
+            <label for="skills">C#</label><br>
+            <input type="checkbox" id="skills" name="skills" value="HTML">
+            <label for="skills">HTML</label><br>
+            <input type="checkbox" id="skills" name="skills" value="CSS">
+            <label for="skills">CSS</label><br><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
