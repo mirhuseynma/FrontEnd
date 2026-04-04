@@ -1,13 +1,68 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#div1{
+.main-content {
+
+    height: 340px;
+    box-shadow: 20px 20px 80px 0px rgba(196, 194, 194, 0.75);
+    margin-top: 20px;
+
+}
+
+.container {
+    width: auto;
+    height: 650px;
+    display: flex;
+    padding: 50px;
+    gap: 70px;
+}
+
+.gcontent {
+    display: flex;
+    gap: 20px;
+
+}
+
+img {
+    width: 220px;
+    height: 220px;
+
+
+}
+
+.title {
+
+    margin-bottom: 5px;
+}
+
+.description-container {
+    display: block;
     width: 400px;
-    height: 400px;
-    border: 2px solid black;
-    justify-content: center;
-    align-items: center;
+    height: 250px;
+
+}
+
+.description {
+    height: auto;
+    text-align: justify;
+
+
+}
+
+.etrafli {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    border: 0px;
+    background-color: white;
+
+}
+
+.etrafli-link {
+    text-decoration: none;
+    color: black;
+    
 }
