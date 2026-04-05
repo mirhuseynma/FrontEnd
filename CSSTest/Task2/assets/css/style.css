@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    
+}
+
+#card {
+    width: 400px;
+    
+    padding: 40px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo {
+    background-color: #eb3c0c;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px 0 40px 0;
+}
+
+.fa-truck-fast {
+    font-size: 50px;
+    color: #f9f6f6;
+}
+
+.title h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+.title h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    color: #4c4c4c;
+}
+
+.description {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+}
