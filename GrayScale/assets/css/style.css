@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.opacity {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.759);
+    opacity: 60%;
+}
+
+.customhead {
+    background-image: url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.customnav{
+    height: 90%;
+}
+.custom-section {
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 80px;
+    line-height: 60px;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    background: linear-gradient(to top, #ffffff, #000000);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    z-index: 9999;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+.custom{
+    position: absolute;
+    top: 0;
+}
