@@ -7,13 +7,12 @@
 .opacity {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, #5b5b5b, #000000);
-    opacity: 80%;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(	https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg);
+
+    
 }
 
 .customhead {
-    background-image: url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -104,32 +103,36 @@
 
 .custom-main{
     width: 100%;
-    min-height: 600px;
+    min-height: 100vh;
     height: auto;
     background: linear-gradient(to top, #202020, #111111, #000000);;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
-    padding-bottom: 40px;
+    padding-bottom: 0;
+    overflow: hidden;
 }
 
 .main-div{
     width: 100%;
-    height: 100%;
+    height: 100vh !important;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     color: #c7c6c6;
     box-sizing: border-box;
+    padding-top: clamp(56px, 8vh, 96px);
 }
 
 .second-div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     height: 100%;
-    margin-top: 20% !important;
+    min-height: 0;
+    margin-top: 0;
 }
 
 .pdivv{
@@ -147,7 +150,32 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 17.6%;
+    margin-top: auto;
+    padding-top: clamp(24px, 4vh, 56px);
+    line-height: 0;
+}
+
+.img-div img{
+    display: block;
+    width: min(100%, 720px);
+    height: auto;
+    vertical-align: bottom;
+    margin-bottom: 0;
+}
+
+@media (min-width: 993px) {
+    .main-div{
+        height: 100vh !important;
+        min-height: 100vh;
+    }
+
+    .second-div{
+        height: 100%;
+    }
+
+    .img-div img{
+        margin-bottom: clamp(-80px, -6vw, -36px);
+    }
 }
 
 
@@ -171,8 +199,6 @@
     padding: 80px 0;
 }
 
-.left img{
-}
 
 
 
@@ -258,6 +284,15 @@
 }
 
 @media (max-width: 992px) {
+    .custom-main{
+        min-height: auto;
+    }
+
+    .main-div{
+        min-height: auto;
+        padding-top: clamp(40px, 8vh, 72px);
+    }
+
     .section {
         width: 100%;
     }
@@ -276,16 +311,24 @@
     }
 
     .second-div{
-        margin-top: 120% !important;
+        margin-top: 0;
+        min-height: auto;
         width: 100%;
         height: auto;
         
     }
 
-    .img-div{
-        margin-top: 16% !important;
-        width: 800px;
+    .pdivv{
+        width: 90%;
     }
+
+    .img-div img{
+        display: flex;
+        justify-content: end;
+        width: min(100%, 560px);
+    }
+
+    
 
     .up,
     .down {
@@ -301,6 +344,11 @@
     .down-left,
     .down-right {
         width: 100%;
+    }
+
+    .left img{
+        width: 100%;
+        height: auto;
     }
 
     .down img {
