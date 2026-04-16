@@ -1,0 +1,42 @@
+*{
+    margin: 0 ; 
+    padding: 0; 
+    box-sizing: border-box ;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    
+}
+
+.form-controller{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #ccc;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box ;
+    
+}
+
+.box-label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-sizing: border-box ;
+    
+}
