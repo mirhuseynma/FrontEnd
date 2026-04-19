@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top right, #e6f4ff 0%, #f7fbff 40%, #f8f9fa 100%);
+}
+
+.hero {
+    background: linear-gradient(135deg, #0d6efd 0%, #198754 100%);
+    color: #fff;
+}
+
+.hero .text-secondary {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.today-prayer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e9ecef;
+    border-radius: 0.6rem;
+    padding: 0.5rem 0.75rem;
+    background-color: #fff;
+}
+
+.today-prayer.active {
+    border-color: #198754;
+    background-color: #e9f7ef;
+    color: #145c32;
+    font-weight: 600;
+}
+
+.table th,
+.table td {
+    white-space: nowrap;
+}
+
+.table tr.is-today {
+    background-color: #e7f1ff;
+}
