@@ -211,7 +211,7 @@ async function loadPrayerTimes() {
 
         const now = new Date();
         const isCurrentMonth = now.getFullYear() === state.year && now.getMonth() + 1 === state.month;
-        const dayIndex = isCurrentMonth ? now.getDate() - 1 : 0;
+        const dayIndex = isCurrentMonth ? now.getDate() - 1 : 5;
         const day = state.days[Math.max(0, Math.min(dayIndex, state.days.length - 1))];
         renderToday(day);
 
